@@ -1,0 +1,19 @@
+.loader {
+    text-align: center;
+    color: green;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.movie-list-container {
+    margin: 40px 0;
+}
+
+img.movie-image {
+    height: 300px;
+}
+
+.movie-card {
+    margin: 20px auto;
+    width: auto;
+}

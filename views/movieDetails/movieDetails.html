@@ -1,0 +1,40 @@
+<section>
+    <p class="text-success text-center" ng-show="loading">Loading ...</p>
+    <p class="text-center text-red" ng-show="!data.status">
+        {{data.error}}
+    </p>
+    <div ng-show="data.status" class="movie-container">
+        <div class="card movie-detail-card">
+            <img ng-src="{{data.movie.Poster}}" class="card-img-top movie-detail-image" alt="..." />
+            <div class="card-body">
+                <h5 class="card-title text-success">
+                    {{data.movie.Title}}
+                </h5>
+            </div>
+        </div>
+        <div class="category">
+            <h3 class="category-heading">Genre</h3>
+            <p>{{data.movie.Genre}}</p>
+        </div>
+        <div class="category">
+            <h3 class="category-heading">Plot</h3>
+            <p>{{data.movie.Plot}}</p>
+        </div>
+        <div class="category">
+            <h3 class="category-heading">Star Actors</h3>
+            <p>{{data.movie.Actors}}</p>
+        </div>
+        <div class="category">
+            <h3 class="category-heading">Production</h3>
+            <p>{{data.movie.Production}}</p>
+        </div>
+        <div class="category">
+            <h3 class="category-heading">Director(s)</h3>
+            <p>{{data.movie.Director}}</p>
+        </div>
+        <div class="category">
+            <h3 class="category-heading">Website</h3>
+            <a ngHref="{data.movie.Website}">{{data.movie.Website}}</a>
+        </div>
+    </div>
+</section>

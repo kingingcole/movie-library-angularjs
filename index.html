@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <base href="/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Library</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="content\css\index.css" />
+    <link rel="stylesheet" href="content\css\header.css" />
+    <link rel="stylesheet" href="content\css\home.css" />
+    <link rel="stylesheet" href="content\css\movieDetail.css" />
+    <script src="app\lib\angular.min.js"></script>
+    <script src="app\lib\angular-route.min.js"></script>
+    <script src="app\app.js"></script>
+    <script src="app\route.js"></script>
+    <script src="views\home\home.controller.js"></script>
+    <script src="views\home\homeService.js"></script>
+    <script src="views\movieDetails\movieDetails.controller.js"></script>
+    <script src="views\recommend\recommend.controller.js"></script>
+    <script src="directives\movieCard\movieCard.js"></script>
+</head>
+
+<body>
+    <header class="header bg-dark" ng-include="'common/header.html'"></header>
+    <main class="container" ng-view></main>
+</body>
+
+</html>

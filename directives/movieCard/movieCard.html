@@ -1,0 +1,16 @@
+<div class="col-xs-12 col-md-6 col-lg-4">
+    <div class="card movie-card">
+        <img ng-src="{{movie.Poster}}" class="card-img-top movie-image" alt="..." />
+        <div class="card-body">
+            <h5 class="card-title text-success">
+                <a ng-href="{{movieUrl}}" class="text-success">{{movie.Title}}</a>
+            </h5>
+            <p class="card-text">
+                {{movie.Plot.slice(0,50) + ' ...'}}
+            </p>
+            <a ng-href="{{movieUrl}}" class="btn btn-success mr-2">More details</a>
+            <span ng-click="removeMovie(movie)" style="cursor: pointer;" class="text-danger">Remove</span
+      >
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<section>
+    <p class="subtitle">{{headerText}}</p>
+    <p class="loader" ng-show="loading ">Loading...</p>
+    <div ng-show="!data.status" class="text-center text-danger">
+        {{data.error}}
+    </div>
+    <div ng-show="data.status" class="movie-list-container row">
+        <movie-card movies="data.movies" ng-repeat="movie in data.movies" movie="movie" removeMovie="removeMovie"></movie-card>
+    </div>
+</section>

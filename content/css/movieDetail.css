@@ -1,0 +1,16 @@
+.movie-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.movie-detail-image {
+    max-height: 500px;
+}
+
+.category {
+    margin: 10px 0;
+}
+
+.category-heading {
+    font-size: 20px;
+}

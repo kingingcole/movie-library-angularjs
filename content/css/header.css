@@ -1,0 +1,24 @@
+.header-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    /* background: #00baba; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    color: white;
+}
+
+.logo {
+    font-size: large;
+}
+
+.nav-list {
+    margin-bottom: 0px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+}
